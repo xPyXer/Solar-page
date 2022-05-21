@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #010326;
+    color: #fff;
+    font-family: 'Medula One', 'Lato', 'BenchNine', 'sans-serif';
+}
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+  body::-webkit-scrollbar-thumb {
+    background-color: #121212;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+a {
+    color: #000;
+}
+/* Navbar */
+.navbar {
+    background: #010326;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+#navLogo {
+    background: linear-gradient(180deg, #FF930F 0%, #FFF95B 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.8rem;
+    font-family: 'Medula One';
+}
+#logoImg {
+    height: 70px;
+    width: auto;
+}
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+.navIten {
+    height: 80px;
+    padding: 0;
+}
+.navLinks {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0 2rem;
+    height: 90%;
+    font-size: 1.8rem;
+}
+.navLinks:hover {
+
+    background-image: linear-gradient(180deg, #FF930F 0%, #FFF95B 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    height: 80%;
+    margin: 1px;
+    border-radius: 10px;
+    outline: none;
+    transition: all 1s ease-in-out;
+}
+.navBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+.btnSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #fff;
+    color:#000;
+}
+.btnSobre:hover {
+    height: 100%;
+    width: 100%;
+    margin: 1px;
+    background: #E8EE37;
+    color: #C1121F;
+    transition: all 1.5s ease-in-out;
+}
+/* MAIN (Header) */
+.main {
+    background: linear-gradient(180deg, #FF930F 0%, #FFF95B 100%);
+}
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 70vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+} 
+.mainContent h1 {
+    margin-left: 50px;
+    font-size: 3rem;
+    line-height: 3.3rem;
+    color: #000;
+    font-family: 'sans-serif';
+    font-weight: bold;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: #000;
+    -moz-text-fill-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainImgContent img {
+    height: 280px;
+    width: auto;
+}
+/* Animação botão main */
+.btnMain {
+    display: flex;
+    align-items: center;
+    background: transparent; 
+    font-size: 3rem;
+    font-family: 'Medula One';
+    font-weight: 500;
+    height: 80px;
+    width: auto;
+    padding: 14px 32px;
+    border-radius: 5px;
+    border: 2px solid #f24b4b;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    outline: none;
+    justify-content: center;
+    margin-left: 100px;
+    overflow: hidden;
+}
+.btnMain a {
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+.btnMain:hover {
+    color: #ffffff;
+}
+.btnMain span {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #f24b4b;
+    transition: width 1.2s, height 1.2s;
+    z-index: -1;
+}
+.btnMain:hover span {
+    width: 600px;
+    height: 600px;
+}
+/* SECTION 1 (COMO FUNCIONA?) */
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 80vh;
+    background-color: #010326;
+    z-index: 1;
+    width: 100%;
+    padding: 0 25%;
+    max-width: 1300px;
+}
+.section1 h1 {
+    font-size: 5rem;
+    color: #C1121F;
+    justify-self: center;
+}
+.section1 p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    justify-content: center;
+    text-align: justify;
+}
+/* SECTION 2 CONVERSÃO */
+.section2 {
+    background: #E8EE37;
+    height: 80vh;
+}
+.section2Content {
+    font-family: sans-serif;
+    display: grid;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 1;
+    max-width: 1300px;
+    width: 70%;
+    padding: 0 50px;
+    justify-content: center;
+}   
+.section2 h1 {
+    font-size: 5rem;
+    font-family: 'Medula One';
+    color: #02735E;
+    justify-self: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.section2 p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    justify-content: center;
+    text-align: justify;
+}
+#btnSection2 {
+    display: grid;
+    align-items: center;
+    background: #02735E; 
+    font-size: 3rem;
+    font-family: 'Medula One';
+    font-weight: 500;
+    height: 12vh;
+    width: auto;
+    padding: 14px 32px;
+    border-radius: 5px;
+    border: 2px solid #02735E;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    outline: none;
+    justify-self: center;
+}
+/* SECTION 3 - CARDS */
+.section3 {
+    padding: 30px;
+    height: 220vh;
+    max-width: 1250px;
+    align-items: center;
+    background: #010326;
+    font-family: sans-serif;
+}
+.section3 h1#sec3Title {
+    font-family: 'Medula One';
+    font-size: 4.5rem;
+    justify-self: center;
+    color: #fff;
+    text-align: center;
+}
+.section3 span {
+    color: #EAF205;
+}
+.card {
+    background: #fff;
+    padding: 15px 14px 40px;
+    border-radius: 20px;
+    height: 20%;
+    margin-top: 20px;
+}
+.cardImg {
+    width: 30%;
+    height: 150px;
+    object-fit: fill;
+}
+.cardContainer .frase p {
+    color: #000;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: -20px;
+    top: 30%;
+}
+/* SECTION 4 */
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 80vh;
+    background-color: #010326;
+    z-index: 1;
+    width: 100%;
+    padding: 0 25%;
+    max-width: 1300px;
+}
+.section4 h1 {
+    font-size: 5rem;
+    color: #C1121F;
+    justify-self: center;
+}
+.section4Content p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    justify-content: space-between;
+    text-align: justify;
+}
+#texto1 + #texto2 {
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.section4Content .btnMain {
+    justify-self: center;
+    background: #fff;
+    color: #000;
+}
+/* FOOTER */
+.footer {
+    background: #121212;
+    width: 100%;
+    max-width: auto;
+}
+/* Resposividade max: 960px */  
+@media screen and (max-width: 960px) {
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbarMenu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+    .navbarMenu.active {
+        background: #010326;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+    #navLogo {
+        padding-left: 20px;
+    }
+    .navbarTog .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.5 ease-in-out;
+        background: #fff;
+    }
+    .navIten {
+        width: 100%;
+    }
+    .navLinks {
+        text-align: center;
+        padding: 3rem;
+        width: 100%;
+        display: table;
+    }
+    #mobileMenu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .navBtn {
+        padding-bottom: 2rem;
+    }
+    .navLinks + .btnSobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+    .navbarTog .bar {
+        display: block;
+        cursor: pointer;
+    }
+    #mobileMenu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobileMenu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobileMenu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .mainContainer {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+    .mainContent {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .mainContent h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        right: 70px;
+    }
+    .mainImgContent {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .mainImgContent img {
+        height: 150px;
+        width: auto;
+    }
+    .btnMain {
+        align-items: center;
+        justify-content: center;
+        font-size: 2.1rem;
+        right: 50px;
+    }
+    .section1 {
+        height: 50vh;
+    }
+    .section1 h1{
+        font-size: 2.4rem;
+        justify-self: center;
+    }
+    .section1 p{
+        font-size: 0.8rem;
+        width: 100%;    
+    }
+    .section2 h1{
+        font-size: 2rem;
+        justify-self: center;
+    }
+    .section2 p{
+        font-size: 0.8rem;
+        font-weight: 600;
+        justify-self: center;
+    }
+    #btnSection2 {
+        display: grid;
+        align-items: center;
+        background: #02735E; 
+        font-size: 1.2rem;
+        font-family: 'Medula One';
+        font-weight: bold;
+        height: 8vh;
+        width: 20vh;
+        padding: 14px 24px;
+        border-radius: 5px;
+        border: 2px solid #02735E;
+        margin-top: 2rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s;
+        outline: none;
+        justify-self: center;
+    }
+    .section3 {
+        padding: 30px;
+        height: 150vh;
+        width: 80%;
+        align-items: center;
+        background: #010326;
+        font-family: sans-serif;
+    }
+    .section3 h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .cards img {
+        height: 110px;
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+    .card {
+        background: #fff;
+        padding: 15px 14px 40px;
+        border-radius: 20px;
+        height: 20%;
+        margin-top: 20px;
+        height: 160px;
+    }
+    .cardImg {
+        width: 30%;
+        height: 150px;
+        object-fit: fill;
+    }
+    .cardContainer .frase p {
+        color: #000;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    .section4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 80vh;
+        background-color: #010326;
+        z-index: 1;
+        width: 70%;
+        padding: 0 25%;
+    }
+    .section4 h1 {
+        font-size: 2.2rem;
+        color: #C1121F;
+        justify-self: center;
+    }
+    .section4Content p {
+        font-family: sans-serif;
+        font-size: 1rem;
+        color: #fff;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    #texto1 + #texto2 {
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .footer {
+        background: #121212;
+        padding: 0;
+        width: 100%;
+        max-width: auto;
+    }
+}
