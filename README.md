@@ -10,7 +10,9 @@
       <img align="center" alt"PyXer-JS" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg"/>
   </p>
  </div>
+ <div>
 <h1 align="center"> RESUMO DO SITE </h1>
+ </div>
 <p align="center" font-size="2rem" font-weight="bold"> Versão desktop </p>
    <img align="center" alt="Print desktop" height="500px" width="auto" src="https://user-images.githubusercontent.com/88254638/171759907-3554a152-f73c-4279-9bb8-2a7fc180f2fc.png"/>
    <img align="center" alt="Print desktop" height="500px" width="auto" src="https://user-images.githubusercontent.com/88254638/171760037-1241025e-aeaa-4e8a-b481-5d551886d0d6.png"/>
